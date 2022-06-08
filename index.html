@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image">
+    <link rel="stylesheet" href="style.css">
+    <title>Library</title>
+</head>
+<body>
+   <div class="library">
+       <div class="container">
+           <h1>Library</h1>
+           <div class="description">
+               <p>A simple easy to use library app to manage your book collection.
+                   It offers your the ability to add books, remove books, and change the 
+                   read status.
+               </p>
+           </div>
+           <button class="btn add-btn">+<span>Add book</span></button>
+           <div class="form-container">
+            <div class="book-form">
+                <form>
+                 <div class="form-control">
+                     <div><label for="title">Book Title<span class="r-field">*</span></label></div>
+                     <input type="text" name="title" id="title" required>
+                 </div>
+ 
+                 <div class="form-control">
+                     <div><label for="author">Book Author<span class="r-field">*</span></label></div>
+                     <input type="text" name="author" id="author" required>
+                 </div>
+ 
+                 <div class="form-control">
+                     <div><label for="pages">Number of Pages<span class="r-field">*</span></label></div>
+                     <input type="text" name="pages" id="pages" pattern="[\d]+" required>
+                 </div>
+ 
+                 <div class="form-control">
+                     <label for="status">Have you read this book?</label>
+                     <input type="checkbox" name="status" id="status">
+                 </div>
+                 <div class="buttons">
+                    <div class="btn cancel">Cancel</div>
+                    <button type="submit" class="btn">Add book</button>
+                 </div>
+                </form>
+            </div>
+           </div>
+           <div class="book-case"></div>
+       </div>
+   </div>
+
+   <div class="footer">
+       &copy; 2022. Crafted by Timothy
+   </div>
+   <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+:root {
+    --primary-color: rgb(59, 236, 236);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    
+}
+
+.description {
+    font-size: 1.3rem;
+    max-width: 500px;
+    margin-bottom: 20px;
+    border: 2px solid ;
+    padding: 20px;
+    border-radius: 5px;
+    border: 2px solid var(--primary-color);
+}
+
+
+.form-container {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.book-form {
+    max-width: 400px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 1.2rem;
+    margin: 200px auto 0 auto;
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.display-form {
+    display: block;
+}
+
+.form-control {
+    margin-bottom: 20px;
+}
+
+.form-control input[type='text'] {
+    width: 100%;
+    height: 40px;
+}
+
+.form-control .r-field {
+    color: red;
+}
+
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.book-case {
+    width: 30%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.book {
+    font-size: 1.3rem;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.status {
+    background-color: skyblue;
+    text-align: center;
+    font-size: 1rem;
+    width: 80%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.status:hover {
+    transform: scale(0.95);
+}
+
+.read {
+    background-color: rgb(91, 241, 104);
+}
+
+.footer {
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px 0;
+
+}
+
+/* utilities */
+.container {
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+   position: relative;
+}
+
+/* buttons */
+
+.btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.add-btn {
+    font-size: 3rem;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+.add-btn span {
+    font-size: 1rem;
+    display: block;
+}
+
+.btn:hover {
+    transform: scale(0.95);
+}
+
+.cancel {
+    background-color: rgba(245, 245, 245, 0.9);
+    border: 1px solid #333;
+    display: inline;
+}
+
+.book .btn {
+    text-align: center;
+    background-color: #ff4444;
+    color: #fff;
+    width: 80%;
+}
+
