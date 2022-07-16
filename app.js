@@ -2,31 +2,29 @@ let myLibary = [];
 const addButton = document.querySelector('.add-btn');
 const bookForm = document.querySelector('.form-container');
 const addBook = document.querySelector(`form`);
+const bookCase = document.querySelector('.book-case');
 
 
-addButton.addEventListener('click', (e) => {
-    formControl()
-
-})
+addButton.addEventListener('click', formControl)
 
 
-function Book(title, author, pages, status) {
-    this.title = title
-    this.author = author
-    this.pages = pages
-    this.status = status
-    
-}
-
-
-Book.prototype.isRead = function() {
-    if (this.status === 'Read') {
-        this.status = 'Not Read'
-    } else {
-        this.status = 'Read'
+class Book {
+    constructor(title, author, pages, status) {
+        this.title = title
+        this.author = author
+        this.pages = pages
+        this.status = status
     }
 
+    isRead = function() {
+        if (this.status === 'Read') {
+            this.status = 'Not Read'
+        } else {
+            this.status = 'Read'
+        }
     
+        
+    }
 }
 
 
@@ -53,8 +51,6 @@ function addBookToLibrary() {
 function displayBook() {
     
    myLibary.forEach((book, index) => {
-        const bookCase = document.querySelector('.book-case');
-
         const div = document.createElement('div');
         div.dataset.index = `${index}`;
         div.classList.add('book');
